@@ -1,1 +1,25 @@
-/* You can add global styles to this file, and also import other style files */
+
+
+/* lets start  */
+
+::-webkit-scrollbar {
+    width: 3px;
+}
+  /* for the track */ 
+::-webkit-scrollbar-track {
+    background-color: white;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #666;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: red;
+}
+
+html, body {
+    scroll-behavior: smooth;
+    background: black;
+    color: white;
+}
+
+/* now let see for a perticular card */

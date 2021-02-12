@@ -1,0 +1,12 @@
+
+
+<br>
+<br>
+<input name="options"  [(ngModel)]="options" type="radio" [value]="true"/> HDFC
+
+<input name="options"[(ngModel)]="options" type="radio" [value]="false" [checked]="!options"/> OTHER
+
+<h2 *ngIf="!options"> <input type="text"></h2>
+
+<br>
+<br>

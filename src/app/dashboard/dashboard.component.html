@@ -1,0 +1,22 @@
+<!-- <div class="col-lg-12 text-center mt-5">
+    <h1>Dashboard page</h1>
+    <button [routerLink]="['/']" type="button" class="btn btn-primary mr-2 mt-5">back</button>
+</div> -->
+
+<div class="col-lg-10 mx-auto border row mx-0 p-3 mt-5">
+    <div *ngFor="let item of data" class="col-lg-6 shadow border my-2 bg-danger" style="color: white;">
+        <h5>{{item.id}}</h5>
+        <!-- <p>{{item.name}}</p>  -->
+        <!-- <p>{{item.body}}</p> -->
+        <p>{{item.address.geo.lng}}</p>
+        <p>{{item.address.geo.lat}}</p>
+    </div>
+    </div>
+
+
+    <div class="col-lg-10 mx-auto border row mx-0 p-3 mt-5">
+        <div *ngFor="let item of data" class="col-lg-6 shadow border my-2 bg-danger" style="color: white;">
+          <h1>MUDASI</h1>
+        </div>
+        </div>
+    

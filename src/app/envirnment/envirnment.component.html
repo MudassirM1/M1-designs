@@ -1,0 +1,11 @@
+<div class="col-lg-12 text-center mt-5">
+    <h1>envo page</h1>
+</div>
+
+ <input #box maxlength="2"
+      (keyup.enter)="update(box.value)"
+      (blur)="update(box.value)">
+
+    <p>{{value}}</p>
+
+    

@@ -1,0 +1,15 @@
+<div class="col-lg-12 text-center mt-5">
+    <h1>scroll page</h1>
+    <button [routerLink]="['/']" type="button" class="btn btn-primary mr-2 mt-5">Back</button>
+</div>
+
+
+<div style="color: red" *ngIf="isInvalid">Please check your ranges</div>
+<form id="inputForm" class="form-group">
+	<h3>Price Filters</h3>
+	<span>:</span>
+	<input type="number" name="greaterThanValue" [(ngModel)]="greaterThanValue" (ngModelChange)="onChange($event)" placeholder="0"><br><br>
+	<span>:</span>
+	<input type="number" name="lessThanValue" [(ngModel)]="lessThanValue" (ngModelChange)="onChange($event)">
+	
+</form>
